@@ -1,4 +1,4 @@
-package com.alen.widget;
+package com.alen.alen.widget;
 
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;

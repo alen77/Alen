@@ -1,4 +1,4 @@
-package com.alen.utils;
+package com.alen.alen.utils;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;

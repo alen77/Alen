@@ -1,8 +1,8 @@
-package com.alen.utils;
+package com.alen.alen.utils;
 
 import android.util.Log;
 
-import com.alen.commen.Constants;
+import com.alen.alen.commen.Constants;
 
 public class LogUtil {
 

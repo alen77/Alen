@@ -1,4 +1,4 @@
-package com.alen.widget;
+package com.alen.alen.widget;
 
 import android.annotation.TargetApi;
 import android.content.Context;

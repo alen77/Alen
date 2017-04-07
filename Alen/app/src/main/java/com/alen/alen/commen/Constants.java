@@ -1,4 +1,4 @@
-package com.alen.commen;
+package com.alen.alen.commen;
 
 /**
  * Created by Alen on 10/25/16.

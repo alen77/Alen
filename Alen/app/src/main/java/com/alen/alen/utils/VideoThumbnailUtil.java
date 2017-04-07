@@ -1,4 +1,4 @@
-package com.alen.utils;
+package com.alen.alen.utils;
 
 import android.graphics.Bitmap;
 import android.media.ThumbnailUtils;
