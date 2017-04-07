@@ -1,1 +1,6 @@
 /build
+/.DS_Store
+.idea/misc.xml
+/build.gradle
+app.iml
+proguard-rules.pro
