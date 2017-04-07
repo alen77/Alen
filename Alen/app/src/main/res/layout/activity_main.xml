@@ -16,4 +16,16 @@
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:textColor="#000"/>
+
+    <com.alibaba.view.BubblingView
+        android:id="@+id/bubbling_view"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="like"/>
 </RelativeLayout>
