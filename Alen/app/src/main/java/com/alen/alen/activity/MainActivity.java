@@ -1,7 +1,6 @@
 package com.alen.alen.activity;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -10,7 +9,7 @@ import com.alibaba.view.BubblingView;
 
 import java.util.Random;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private Button mVLike;
     private BubblingView mBubblingView;
@@ -35,11 +34,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setToolbar(TOOLBAR_ID, R.menu.menu_main);
+
         setContentView(R.layout.activity_main);
+
 
         mVLike = (Button) findViewById(R.id.btn_like);
         mBubblingView = (BubblingView) findViewById(R.id.bubbling_view);
-
         mVLike.setOnClickListener(this);
     }
 
