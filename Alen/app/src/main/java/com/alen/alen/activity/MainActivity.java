@@ -1,10 +1,12 @@
 package com.alen.alen.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 import com.alen.alen.R;
+import com.alen.alen.kotlin.KotlinTestActivity;
 import com.alibaba.view.BubblingView;
 
 import java.util.Random;
@@ -42,6 +44,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         mVLike = (Button) findViewById(R.id.btn_like);
         mBubblingView = (BubblingView) findViewById(R.id.bubbling_view);
         mVLike.setOnClickListener(this);
+        findViewById(R.id.btn_kotlin).setOnClickListener(this);
     }
 
     private void showFlower() {
@@ -53,12 +56,16 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        if (mIndex == 0) {
-            mIndex = 1;
-            mVLike.postDelayed(mRunnable, 100);
+        if (view.getId() == R.id.btn_kotlin) {
+            startActivity(new Intent(this, KotlinTestActivity.class));
         } else {
-            mIndex = 0;
-            mVLike.removeCallbacks(mRunnable);
+            if (mIndex == 0) {
+                mIndex = 1;
+                mVLike.postDelayed(mRunnable, 100);
+            } else {
+                mIndex = 0;
+                mVLike.removeCallbacks(mRunnable);
+            }
         }
     }
 }
