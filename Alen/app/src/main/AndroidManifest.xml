@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".kotlin.KotlinTestActivity" />
+        <activity android:name=".activity.TimePickerActivity"/>
     </application>
 
 </manifest>
