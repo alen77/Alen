@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".kotlin.KotlinTestActivity" />
         <activity android:name=".activity.TimePickerActivity"/>
+        <activity android:name=".kotlin.RulerActivity"/>
     </application>
 
 </manifest>

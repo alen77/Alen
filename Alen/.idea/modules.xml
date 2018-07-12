@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Alen.iml" filepath="$PROJECT_DIR$/Alen.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/libBubblingView/libBubblingView.iml" filepath="$PROJECT_DIR$/libBubblingView/libBubblingView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libframework/libframework.iml" filepath="$PROJECT_DIR$/libframework/libframework.iml" />
     </modules>
   </component>
 </project>

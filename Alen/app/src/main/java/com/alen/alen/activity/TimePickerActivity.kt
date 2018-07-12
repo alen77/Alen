@@ -1,10 +1,10 @@
 package com.alen.alen.activity
 
-import android.os.Bundle
 import android.view.View
 import com.alen.alen.R
 import com.bigkoo.pickerview.OptionsPickerView
 import com.bigkoo.pickerview.TimePickerView
+import com.example.libframework.FrameActivity
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
@@ -14,17 +14,27 @@ import java.util.*
  */
 
 class TimePickerActivity : BaseActivity(), View.OnClickListener {
-    private val mTimes = ArrayList<String>()
+    override fun getTitleId(): Int {
+        return FrameActivity.TOOLBAR_ID
+    }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.act_time_picker)
-        findViewById(R.id.btn_show).setOnClickListener(this)
+    override fun getMenuId(): Int {
+        return R.menu.menu_main
+    }
+
+    override fun getLayoutId(): Int {
+        return R.layout.act_time_picker
+    }
+
+    override fun initView() {
+        val show : View = findViewById(R.id.btn_show)
+        show.setOnClickListener(this)
         mTimes.add("上午")
         mTimes.add("下午")
         mTimes.add("夜间")
-
     }
+
+    private val mTimes = ArrayList<String>()
 
     private fun showDialog() {
         // 设置传入的时间格式
