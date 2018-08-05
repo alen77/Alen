@@ -1,1 +1,1 @@
-include ':app', ':libBubblingView'
+include ':app', ':libBubblingView', ':libframework'

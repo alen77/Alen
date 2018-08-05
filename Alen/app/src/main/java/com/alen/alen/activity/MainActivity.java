@@ -1,12 +1,12 @@
 package com.alen.alen.activity;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 import com.alen.alen.R;
 import com.alen.alen.kotlin.KotlinTestActivity;
+import com.alen.alen.kotlin.RulerActivity;
 import com.alibaba.view.BubblingView;
 
 import java.util.Random;
@@ -34,17 +34,27 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     };
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setToolbar(TOOLBAR_ID, R.menu.menu_main);
+    public int getLayoutId() {
+        return R.layout.activity_main;
+    }
 
-        setContentView(R.layout.activity_main);
-
-
-        mVLike = (Button) findViewById(R.id.btn_like);
+    @Override
+    public void initView() {
+        mVLike = findViewById(R.id.btn_like);
         mBubblingView = (BubblingView) findViewById(R.id.bubbling_view);
         mVLike.setOnClickListener(this);
         findViewById(R.id.btn_kotlin).setOnClickListener(this);
+        findViewById(R.id.btnRuler).setOnClickListener(this);
+    }
+
+    @Override
+    public int getTitleId() {
+        return TOOLBAR_ID;
+    }
+
+    @Override
+    public int getMenuId() {
+        return R.menu.menu_main;
     }
 
     private void showFlower() {
@@ -58,6 +68,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     public void onClick(View view) {
         if (view.getId() == R.id.btn_kotlin) {
             startActivity(new Intent(this, KotlinTestActivity.class));
+        } else if (view.getId() == R.id.btnRuler) {
+            startActivity(new Intent(this, RulerActivity.class));
         } else {
             if (mIndex == 0) {
                 mIndex = 1;

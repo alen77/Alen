@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.alen.alen.widget.RulersView
+            android:id="@+id/rulerView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:alphaEnable="true"
+            app:lineColor="@android:color/darker_gray"
+            app:lineMaxHeight="40dp"
+            app:lineMidHeight="30dp"
+            app:lineMinHeight="20dp"
+            app:lineSpaceWidth="10dp"
+            app:lineWidth="2.5dp"
+            app:maxValue="200"
+            app:minValue="20"
+            app:perValue="0.1"
+            app:selectorValue="55"
+            app:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
