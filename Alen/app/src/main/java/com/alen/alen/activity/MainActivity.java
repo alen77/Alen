@@ -1,15 +1,13 @@
 package com.alen.alen.activity;
 
-import android.app.Dialog;
 import android.content.Intent;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.widget.Button;
 
 import com.alen.alen.R;
 import com.alen.alen.dialog.AlertDialog;
-import com.alen.alen.dialog.BaseDialog;
 import com.alen.alen.kotlin.AiTalkActivity;
+import com.alen.alen.kotlin.GridListActivity;
 import com.alen.alen.kotlin.KotlinTestActivity;
 import com.alen.alen.kotlin.RulerActivity;
 import com.alen.alen.kotlin.ScrollViewActivity;
@@ -53,6 +51,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
         findViewById(R.id.btnRuler).setOnClickListener(this);
         findViewById(R.id.btnStretch).setOnClickListener(this);
         findViewById(R.id.btnAi).setOnClickListener(this);
+        findViewById(R.id.btnStretch).setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                startActivity(new Intent(MainActivity.this, GridListActivity.class));
+                return false;
+            }
+        });
     }
 
     @Override

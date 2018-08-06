@@ -23,6 +23,7 @@
         <activity android:name=".kotlin.RulerActivity"/>
         <activity android:name=".kotlin.ScrollViewActivity"/>
         <activity android:name=".kotlin.AiTalkActivity" />
+        <activity android:name=".kotlin.GridListActivity" />
     </application>
 
 </manifest>
