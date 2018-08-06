@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.alen.alen.widget.StretchLayout
+        android:id="@+id/stretchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/header"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="I don't feel good !"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/design_default_color_primary_dark"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="I don't feel good !"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/design_default_color_primary_dark"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="I don't feel good !"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/design_default_color_primary_dark"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="I don't feel good !"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/design_default_color_primary_dark"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="I don't feel good !"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/design_default_color_primary_dark"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="I don't feel good !"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/design_default_color_primary_dark"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="I don't feel good !"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/design_default_color_primary_dark"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="I don't feel good !"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/design_default_color_primary_dark"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="I don't feel good !"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/design_default_color_primary_dark"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="I don't feel good !"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/design_default_color_primary_dark"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="I don't feel good !"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/design_default_color_primary_dark"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="I don't feel good !"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/design_default_color_primary_dark"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="I don't feel good !"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/design_default_color_primary_dark"/>
+            </LinearLayout>
+        </ScrollView>
+    </com.alen.alen.widget.StretchLayout>
+
+</android.support.constraint.ConstraintLayout>

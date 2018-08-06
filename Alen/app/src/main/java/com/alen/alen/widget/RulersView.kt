@@ -63,7 +63,7 @@ class RulersView : View {
         init(mContext, attrs)
     }
 
-    fun init(context: Context, attrs: AttributeSet) {
+    private fun init(context: Context, attrs: AttributeSet) {
         mScroller = Scroller(context)
 
         mLineSpaceWidth = myFloat(25.0f)
