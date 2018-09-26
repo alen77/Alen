@@ -5,66 +5,65 @@ import android.app.Dialog
 import android.content.Context
 import android.content.DialogInterface
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 
 /**
  * Created by Alen on 2018/7/16.
  */
-open class BaseDialog : Dialog{
+open class BaseDialog : Dialog {
 
     constructor(context: Context) : super(context)
 
     constructor(context: Context, themeResId: Int) : super(context, themeResId)
 
     constructor(context: Context, cancelAble: Boolean,
-                cancelListener: DialogInterface.OnCancelListener ) : super(context, cancelAble, cancelListener)
+                cancelListener: DialogInterface.OnCancelListener) : super(context, cancelAble, cancelListener)
 
     class Builder(private val context: Context) {
-        private var mDialog : BaseDialog ?= null
+        private var mDialog: BaseDialog? = null
 
-        private var mTitle : String ?= null
-        private var mMessage : String ?= null
-        private var mPositive : String ?= null
-        private var mNegative: String ?= null
-        private var mCancel : String ?= null
+        private var mTitle: String? = null
+        private var mMessage: String? = null
+        private var mPositive: String? = null
+        private var mNegative: String? = null
+        private var mCancel: String? = null
 
         private var withOffSize: Float = 0.toFloat()
         private var heightOffSize: Float = 0.toFloat()
 
-        private var mContentResId : Int = 0
+        private var mContentResId: Int = 0
 
-        fun setContentView(resId : Int): Builder {
+        fun setContentView(resId: Int): Builder {
             mContentResId = resId
             return this
         }
 
-        fun setTitle(title: String) : Builder {
+        fun setTitle(title: String): Builder {
             mTitle = title
             return this
         }
 
-        fun setMessage(message: String) : Builder {
+        fun setMessage(message: String): Builder {
             mMessage = message
             return this
         }
 
-        fun setPositive(content: String) : Builder {
+        fun setPositive(content: String): Builder {
             mPositive = content
             return this
         }
 
-        fun setNegative(content: String) : Builder {
+        fun setNegative(content: String): Builder {
             mNegative = content
             return this
         }
 
-        fun setCancel(content: String) : Builder {
+        fun setCancel(content: String): Builder {
             mCancel = content
             return this
         }
 
-        fun create() : BaseDialog? {
+        fun create(): BaseDialog? {
             mDialog = BaseDialog(context)
 
             val inflater = context

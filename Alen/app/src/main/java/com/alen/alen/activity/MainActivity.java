@@ -1,8 +1,10 @@
 package com.alen.alen.activity;
 
 import android.content.Intent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.alen.alen.R;
 import com.alen.alen.dialog.AlertDialog;
@@ -55,6 +57,15 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
             @Override
             public boolean onLongClick(View view) {
                 startActivity(new Intent(MainActivity.this, GridListActivity.class));
+                return false;
+            }
+        });
+        getWindow().getDecorView().setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    Toast.makeText(MainActivity.this, motionEvent.getX() + "", Toast.LENGTH_SHORT).show();
+                }
                 return false;
             }
         });

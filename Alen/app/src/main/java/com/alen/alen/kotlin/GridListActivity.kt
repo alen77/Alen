@@ -1,5 +1,6 @@
 package com.alen.alen.kotlin
 
+import android.graphics.Rect
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.helper.ItemTouchHelper
@@ -10,6 +11,7 @@ import com.alen.alen.R
 import com.alen.alen.activity.BaseActivity
 import com.example.libframework.FrameActivity
 import kotlinx.android.synthetic.main.activity_grid_list.*
+import kotlinx.android.synthetic.main.item_grid.view.*
 
 class GridListActivity : BaseActivity() {
     override fun getLayoutId(): Int {
@@ -66,8 +68,17 @@ class GridListActivity : BaseActivity() {
             return 100
         }
 
-        override fun onBindViewHolder(p0: RecyclerView.ViewHolder, p1: Int) {
-            with(p0?.itemView!!) {
+        override fun onBindViewHolder(holder: RecyclerView.ViewHolder, p1: Int) {
+            with(holder?.itemView!!) {
+                holder.itemView.setOnClickListener {
+                    var location = IntArray(2)
+                    tvName.getLocationOnScreen(location)
+                    val rect = Rect()
+                    tvName.getGlobalVisibleRect(rect)
+                    tvLocation.text = String.format("locationX = ", location[0])
+                    tvDown.text = String.format("down = ", rect.centerX())
+
+                }
             }
         }
 

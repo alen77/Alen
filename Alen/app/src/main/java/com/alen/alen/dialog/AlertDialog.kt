@@ -8,11 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import com.alen.alen.Net.RetrofitUtil
-import com.alen.alen.Net.runRxLambda
 import com.alen.alen.R
-import com.alen.alen.commen.Constants
-import com.alen.alen.module.AiAsk
 import org.feezu.liuli.timeselector.Utils.TextUtil
 
 /**
@@ -100,19 +96,19 @@ class AlertDialog(context: Context, themeId : Int) : Dialog(context, themeId) {
             if (mNegativeListener != null) {
                 btnNegative.visibility = View.VISIBLE
                 btnNegative.text = if (TextUtil.isEmpty(mNegative)) "negative" else mNegative
-                btnNegative.setOnClickListener({ _ ->
+                btnNegative.setOnClickListener { _ ->
                     mNegativeListener!!.onNegative()
                     mDialog!!.dismiss()
-                })
+                }
             }
 
             if (mPositiveListener != null) {
                 btnPositive.visibility = View.VISIBLE
                 btnPositive.text = if (TextUtil.isEmpty(mPositive)) "positive" else mPositive
-                btnPositive.setOnClickListener({ _ ->
+                btnPositive.setOnClickListener { _ ->
                     mPositiveListener!!.onPositive()
                     mDialog!!.dismiss()
-                })
+                }
             }
         }
 
