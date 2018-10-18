@@ -1,11 +1,10 @@
-package com.alen.alen.Net
+package com.alen.alen.net
 
 import com.alen.alen.module.AiAsk
 import com.alen.alen.module.AiRecive
 import io.reactivex.Observable
 import retrofit2.http.Body
 import retrofit2.http.POST
-import retrofit2.http.Query
 
 /**
  * Created by Alen on 2018/7/17.

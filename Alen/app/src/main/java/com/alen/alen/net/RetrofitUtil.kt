@@ -1,4 +1,4 @@
-package com.alen.alen.Net
+package com.alen.alen.net
 
 import android.util.Log
 import okhttp3.OkHttpClient
@@ -11,22 +11,23 @@ import java.util.concurrent.TimeUnit
 /**
  * Created by Alen on 2018/7/17.
  */
-class RetrofitUtil private constructor(){
+class RetrofitUtil private constructor() {
     private lateinit var retrofitService: RetrofitService
+
     companion object {
         fun getInstance() = Helper.instance
     }
 
-    private object Helper{
+    private object Helper {
         val instance = RetrofitUtil()
     }
 
     private fun getBuilder() {
-        val build = OkHttpClient.Builder().connectTimeout(15,TimeUnit.SECONDS)
+        val build = OkHttpClient.Builder().connectTimeout(15, TimeUnit.SECONDS)
                 .writeTimeout(15, TimeUnit.SECONDS)
                 .readTimeout(15, TimeUnit.SECONDS)
         val logging = HttpLoggingInterceptor(HttpLoggingInterceptor.Logger {
-            Log.w("retrofit url",it)
+            Log.w("retrofit url", it)
         })
         logging.level = HttpLoggingInterceptor.Level.BODY
 
@@ -40,7 +41,7 @@ class RetrofitUtil private constructor(){
                 .build().create(RetrofitService::class.java)
     }
 
-    fun getService():RetrofitService{
+    fun getService(): RetrofitService {
         getBuilder()
         return retrofitService
     }

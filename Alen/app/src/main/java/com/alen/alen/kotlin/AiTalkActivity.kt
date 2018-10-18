@@ -2,18 +2,16 @@ package com.alen.alen.kotlin
 
 import android.annotation.SuppressLint
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.View
-import android.widget.Button
-import com.alen.alen.Net.RetrofitUtil
-import com.alen.alen.Net.runRxLambda
 import com.alen.alen.R
 import com.alen.alen.activity.BaseActivity
 import com.alen.alen.adapter.AiTalkAdapter
 import com.alen.alen.commen.Constants
 import com.alen.alen.module.AiAsk
 import com.alen.alen.module.Chat
+import com.alen.alen.net.RetrofitUtil
+import com.alen.alen.net.runRxLambda
 import com.example.libframework.FrameActivity
 import kotlinx.android.synthetic.main.act_ai.*
 

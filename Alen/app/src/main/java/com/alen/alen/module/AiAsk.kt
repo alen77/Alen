@@ -4,8 +4,7 @@ package com.alen.alen.module
 data class AiAsk(
         val reqType: Int,
         val perception: Perception,
-        val userInfo: UserInfo
-) {
+        val userInfo: UserInfo) {
 
     data class UserInfo(
             val apiKey: String,
@@ -13,12 +12,8 @@ data class AiAsk(
     )
 
 
-    data class Perception(
-            val inputText: InputText
-    ) {
+    data class Perception(val inputText: InputText) {
 
-        data class InputText(
-                val text: String
-        )
+        data class InputText(val text: String)
     }
 }
