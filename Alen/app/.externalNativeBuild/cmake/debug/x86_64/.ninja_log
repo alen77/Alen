@@ -1,0 +1,3 @@
+# ninja log v5
+1	95	0	CMakeFiles/ImageProc.dir/src/main/jni/ImageProc.c.o	8016f5a0d738a718
+95	156	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libImageProc.so	e81840b715925ab

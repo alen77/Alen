@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnSuOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="su open"/>
+
+    <Button
+        android:id="@+id/btnSuClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="su close"/>
+
+    <Button
+        android:id="@+id/btnWOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="write open"/>
+
+    <Button
+        android:id="@+id/btnWClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="write close"/>
+</LinearLayout>

@@ -1,0 +1,38 @@
+
+{
+	"buildFiles" : [ "/Users/alen/Work/www/Alen/Alen/app/CMakeLists.txt" ],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"/Users/alen/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/alen/Work/www/Alen/Alen/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+	],
+	"libraries" : 
+	{
+		"ImageProc-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "ImageProc",
+			"buildCommand" : "/Users/alen/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/alen/Work/www/Alen/Alen/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target ImageProc",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/alen/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/alen/Library/Android/sdk/ndk-bundle/sysroot -DImageProc_EXPORTS  -isystem /Users/alen/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/alen/Work/www/Alen/Alen/app/src/main/jni/ImageProc.c",
+					"workingDirectory" : "/Users/alen/Work/www/Alen/Alen/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/Users/alen/Work/www/Alen/Alen/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libImageProc.so",
+			"toolchain" : "12146186440372823313"
+		}
+	},
+	"toolchains" : 
+	{
+		"12146186440372823313" : 
+		{
+			"cCompilerExecutable" : "/Users/alen/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/alen/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}
